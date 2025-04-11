@@ -37,11 +37,11 @@ padding: 0% 8%;
 }
 .sec1 {
 /* background-color: #ececf256; */
-/* height: 36vh;
-/* background-color: rgba(235, 232, 232, 0.39); */
+/* /* height: 36vh; */
+background-color: rgba(0, 0, 0, 0.39); 
 
     text-align: center; 
-    padding: 0% 8%;
+    padding: 0% 3%;
    
     border-radius: 10px;
 
