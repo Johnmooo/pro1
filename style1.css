@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+        /* seeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeec1 */
+        .sec1 {
+    background-color: #f3f3f3;
+    display: flex;
+    padding: 45px 0;
+}
+
+.sec1 h2 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+
+.photo-right img {
+    width: 40%;
+    float: right;
+    border-radius: 20px;
+}
+.left {
+    width: 60%;
+    float: right;
+}
+
+ 
+.sec1-info {
+    width: 100%;
+    display: block;
+    padding-right: 70px;
+}
+ .sec1-info p{
+    margin: 30px 0;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.Read{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: floralwhite;
+    margin-left: 10px;
+}
+.Read:hover{
+    color: peru;
+}
+
+/* seeeeeeeeeeeeeeeeeeeeeeeeeeec2 */
+.sec2 {
+    padding: 45px 0;
+    display: flex;
+}
+
+
+.sec2 h2 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.photo-left img {
+    width: 40%;
+    float: left;
+    border-radius: 20px;
+}
+
+.right {
+    width: 60%;
+    float: left;
+}
+ 
+.sec2-info {
+    width: 100%;
+    display: block;
+    padding-left: 70px;
+}
+
+
+.sec2-info p {
+    margin: 30px 0;
+    line-height: 30px;
+    font-size: 15px;
+}
+.Read2{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: floralwhite;
+    margin-left: 10px;
+}
+.Read2:hover{
+    color: peru;
+}
