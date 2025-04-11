@@ -96,3 +96,36 @@
 .Read2:hover{
     color: peru;
 }
+
+@media (max-width: 767px) {
+    .sec1,
+    .sec2 {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .photo-right img,
+    .photo-left img {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        float: none;
+    }
+
+    .sec1-info,
+    .sec2-info {
+        padding: 0 20px;
+    }
+
+    .Read,
+    .Read2 {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
