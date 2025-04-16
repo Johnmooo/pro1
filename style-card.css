@@ -1,8 +1,22 @@
+:root {
+    --main-color: #b7a324;
+    --sectionPadding: 100px;
+    --main-transition: .3s;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
 body {
     /* background:rgb(207, 204, 204); */
     height: 85vh;
     background-image: url(./img/home.jpg);
     background-attachment: fixed;
+    background-color: #00000049;
+    
     
     /* background: linear-gradient(90deg,rgba(2, 2, 0, 0.993), rgba(251, 255, 0, 0.399) ,  rgba(2, 2, 0, 0.993)); */
     
@@ -14,6 +28,138 @@ gap: 20px;
 padding: 20px; */
 
 } 
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* small */
+@media (min-width:768px) {
+    .container {
+        width: 760px;
+    }
+}
+
+/* medium */
+@media (min-width:992px) {
+    .container {
+        width: 985px;
+    }
+}
+
+/* larg */
+@media (min-width:1200px) {
+    .container {
+        width: 1195px;
+    }
+}
+/*--------------------------------------------------------  start header -----------------------------------------------------*/
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 25555555;
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .container::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 30px);
+    bottom: 0;
+    left: 15px;
+    background-color: #a2a2a2;
+}
+
+header img {
+    width: 60px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+header nav .toggle-menu {
+    color: #fff;
+    position: absolute;
+    right: 75px;
+}
+
+@media (min-width: 768px) {
+    .toggle-menu {
+        display: none;
+    }
+}
+
+header nav ul {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    header nav ul {
+        display: none;
+    }
+}
+
+header nav ul a {
+    display: block;
+    color: #fff;
+    padding: 30px 20px;
+    text-decoration: none;
+    transition: var(--main-transition);
+    position: relative;
+    z-index: 9999;
+}
+
+header nav ul a.active,
+header nav ul a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+header .form {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 60px;
+    border-left: 1px solid #fff;
+}
+
+header .form i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+}
+/* الوضع الافتراضي للقائمة على الموبايل (مخفي) */
+header nav ul.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #00000080;
+}
+/*----------------------------------------------------------- end header--------------------------------------------------------------- */
+ul {
+    list-style: none;
+}
 a {
 text-decoration: none;
 color: aliceblue;
@@ -33,19 +179,25 @@ font-size: 150%;
 padding: 0% 8%;   
 }
 .allContete {
-/* background-color: #222; */
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    
+    
 }
 .sec1 {
-/* background-color: #ececf256; */
-/* /* height: 36vh; */
-background-color: rgba(0, 0, 0, 0.39); 
-
-    text-align: center; 
-    padding: 0% 3%;
-   
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.39); 
+    padding: 60px 3% 30px; /* padding-top كبير علشان يبعد عن الهيدر */
     border-radius: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 110px; /* المسافة بين النافبار والكلام */
+}
 
-} 
 .cards {
 /* background-color: #222; */
 display: flex;
@@ -53,6 +205,8 @@ flex-wrap: wrap;
 justify-content: center;
 gap: 20px;
 padding: 70px;
+
+
 
 }
 .card {
@@ -92,7 +246,6 @@ background-color: #e6b222;
 transform: scale(1.1);
 }
 
-
 @media (max-width: 1024px) {
     h1 {
         font-size: 300%;
@@ -111,7 +264,7 @@ transform: scale(1.1);
     }
 }
 
-/* === الميديا كويري للأجهزة الصغيرة (موبايل) === */
+
 @media (max-width: 767px) {
     body {
         height: auto;
