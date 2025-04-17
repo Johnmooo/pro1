@@ -45,7 +45,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 25555555;
-    position: fixed;
+/*     position: fixed; */
 }
 
 header .container {
